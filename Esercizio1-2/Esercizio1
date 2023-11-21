@@ -1,0 +1,142 @@
+┌──(vboxuser2㉿kali)-[/home]
+└─$ sudo su          
+┌──(root㉿kali)-[/home]
+└─# mkdir dos
+                                                                                                                                                                                             
+┌──(root㉿kali)-[/home]
+└─# mkdir studenti
+                                                                                                                                                                                             
+┌──(root㉿kali)-[/home]
+└─# mkdir windows 
+                                                                                                                                                                                             
+┌──(root㉿kali)-[/home]
+└─# mkdir tmp    
+                                                                                                                                                                                             
+┌──(root㉿kali)-[/home]
+└─# mkdir studenti/scuola
+                                                                                                                                                                                             
+┌──(root㉿kali)-[/home]
+└─# rmdir studenti/scuola
+                                                                                                                                                                                             
+┌──(root㉿kali)-[/home]
+└─# mkdir studenti/nicola
+                                                                                                                                                                                             
+┌──(root㉿kali)-[/home]
+└─# mkdir studenti/nicola/scuola
+                                                                                                                                                                                             
+┌──(root㉿kali)-[/home]
+└─# mkdir studenti/nicola/lavoro
+                                                                                                                                                                                             
+┌──(root㉿kali)-[/home]
+└─# mkdir studenti/anna         
+                                                                                                                                                                                             
+┌──(root㉿kali)-[/home]
+└─# mkdir studenti/matteo
+                                                                                                                                                                                             
+┌──(root㉿kali)-[/home]
+└─# mkdir studenti/matteo/amici
+                                                                                                                                                                                             
+┌──(root㉿kali)-[/home]
+└─# mkdir studenti/anna/casa   
+                                                                                                                                                                                             
+┌──(root㉿kali)-[/home]
+└─# cd studenti/nicola/lavoro
+                                                                                                                                                                                             
+┌──(root㉿kali)-[/home/studenti/nicola/lavoro]
+└─# cd studenti/anna/casa    
+cd: no such file or directory: studenti/anna/casa
+                                                                                                                                                                                             
+┌──(root㉿kali)-[/home/studenti/nicola/lavoro]
+└─# cd home/studenti/anna/casa
+cd: no such file or directory: home/studenti/anna/casa
+                                                                                                                                                                                             
+┌──(root㉿kali)-[/home/studenti/nicola/lavoro]
+└─# cd /home/studenti/anna/   
+                                                                                                                                                                                             
+┌──(root㉿kali)-[/home/studenti/anna]
+└─# cd /home/studenti/anna/casa
+                                                                                                                                                                                             
+┌──(root㉿kali)-[/home/studenti/anna/casa]
+└─# cp /home/studenti/nicola/scuola/compito.doc /home/studenti/anna/casa
+cp: cannot stat '/home/studenti/nicola/scuola/compito.doc': No such file or directory
+                                                                                                                                                                                             
+┌──(root㉿kali)-[/home/studenti/anna/casa]
+└─# touch /home/studenti/nicola/scuola/compito.doc
+                                                                                                                                                                                             
+┌──(root㉿kali)-[/home/studenti/anna/casa]
+└─# touch /home/studenti/nicola/scuola/relazione.doc
+                                                                                                                                                                                             
+┌──(root㉿kali)-[/home/studenti/anna/casa]
+└─# touch /home/tmp/risultati.doc                   
+                                                                                                                                                                                             
+┌──(root㉿kali)-[/home/studenti/anna/casa]
+└─# cp /home/studenti/nicola/scuola/compito.doc /home/studenti/anna/casa
+                                                                                                                                                                                             
+┌──(root㉿kali)-[/home/studenti/anna/casa]
+└─# mv /home/studenti/nicola/scuola/relazione.doc /home/studenti/anna/casa
+                                                                                                                                                                                             
+┌──(root㉿kali)-[/home/studenti/anna/casa]
+└─# touch /home/studenti/nicola/lavoro/pippo.txt    
+                                                                                                                                                                                             
+┌──(root㉿kali)-[/home/studenti/anna/casa]
+└─# setxkbmap it                                                        
+                                                                                                                                                                                             
+┌──(root㉿kali)-[/home/studenti/anna/casa]
+└─# chmod /home/studenti/nicola/lavoro/pippo.txt  -rw-r--r--            
+                                                                                                                                                                                             
+┌──(root㉿kali)-[/home/studenti/anna/casa]
+└─# mv /home/studenti/anna/casa /home/studenti/anna/.casa                 
+                                                                                                                                                                                             
+┌──(root㉿kali)-[/home/studenti/anna/casa]
+└─# cd ..                                                   
+                                                                                                                                                                                             
+┌──(root㉿kali)-[/home/studenti/anna]
+└─# ls
+                                                                                                                                                                                             
+┌──(root㉿kali)-[/home/studenti/anna]
+└─# cd /home/studenti/nicola/lavoro
+                                                                                                                                                                                             
+┌──(root㉿kali)-[/home/studenti/nicola/lavoro]
+└─# sudo nano pippo.txt
+                                                                                                                                                                                             
+┌──(root㉿kali)-[/home/studenti/nicola/lavoro]
+└─# rmdir /home/studenti/matteo/amici
+                                                                                                                                                                                             
+┌──(root㉿kali)-[/home/studenti/nicola/lavoro]
+└─# rmdir dos                        
+rmdir: failed to remove 'dos': No such file or directory
+                                                                                                                                                                                             
+┌──(root㉿kali)-[/home/studenti/nicola/lavoro]
+└─# rmdir /home/dos                  
+                                                                                                                                                                                             
+┌──(root㉿kali)-[/home/studenti/nicola/lavoro]
+└─# rmdir /home/tmp
+rmdir: failed to remove '/home/tmp': Directory not empty
+                                                                                                                                                                                             
+┌──(root㉿kali)-[/home/studenti/nicola/lavoro]
+└─# rmdir -r /home/tmp
+rmdir: invalid option -- 'r'
+Try 'rmdir --help' for more information.
+                                                                                                                                                                                             
+┌──(root㉿kali)-[/home/studenti/nicola/lavoro]
+└─# rm -r /home/tmp   
+                                                                                                                                                                                             
+┌──(root㉿kali)-[/home/studenti/nicola/lavoro]
+└─# rm -r /home/studenti
+                                                                                                                                                                                             
+┌──(root㉿kali)-[/home/studenti/nicola/lavoro]
+└─# rmdir windows       
+rmdir: failed to remove 'windows': No such file or directory
+                                                                                                                                                                                             
+┌──(root㉿kali)-[/home/studenti/nicola/lavoro]
+└─# rmdir /home/windows
+                                                                                                                                                                                             
+┌──(root㉿kali)-[/home/studenti/nicola/lavoro]
+└─# cd /home                       
+                                                                                                                                                                                             
+┌──(root㉿kali)-[/home]
+└─# ls
+vboxuser2
+                                                                                                                                                                                             
+┌──(root㉿kali)-[/home]
+└─# 
