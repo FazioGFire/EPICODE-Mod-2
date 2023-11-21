@@ -192,3 +192,447 @@ k: command not found
 ┌──(vboxuser2㉿kali)-[~/Desktop]
 └─$ kill 6250
 
+┌──(vboxuser2㉿kali)-[~/Desktop]
+└─$ df -h                     
+Filesystem      Size  Used Avail Use% Mounted on
+udev            1.9G     0  1.9G   0% /dev
+tmpfs           392M  1.1M  391M   1% /run
+/dev/sda1        29G   14G   14G  50% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           392M  112K  392M   1% /run/user/1000
+
+
+┌──(vboxuser2㉿kali)-[~/Desktop]
+└─$ ps -ef
+UID          PID    PPID  C STIME TTY          TIME CMD
+root           1       0  0 14:30 ?        00:00:00 /sbin/init splash
+root           2       0  0 14:30 ?        00:00:00 [kthreadd]
+root           3       2  0 14:30 ?        00:00:00 [rcu_gp]
+root           4       2  0 14:30 ?        00:00:00 [rcu_par_gp]
+root           5       2  0 14:30 ?        00:00:00 [slub_flushwq]
+root           6       2  0 14:30 ?        00:00:00 [netns]
+root           8       2  0 14:30 ?        00:00:00 [kworker/0:0H-events_highpri]
+root           9       2  0 14:30 ?        00:00:00 [kworker/u8:0-events_unbound]
+root          10       2  0 14:30 ?        00:00:00 [mm_percpu_wq]
+root          11       2  0 14:30 ?        00:00:00 [rcu_tasks_kthread]
+root          12       2  0 14:30 ?        00:00:00 [rcu_tasks_rude_kthread]
+root          13       2  0 14:30 ?        00:00:00 [rcu_tasks_trace_kthread]
+root          14       2  0 14:30 ?        00:00:00 [ksoftirqd/0]
+root          15       2  0 14:30 ?        00:00:00 [rcu_preempt]
+root          16       2  0 14:30 ?        00:00:00 [migration/0]
+root          17       2  0 14:30 ?        00:00:00 [idle_inject/0]
+root          19       2  0 14:30 ?        00:00:00 [cpuhp/0]
+root          20       2  0 14:30 ?        00:00:00 [cpuhp/1]
+root          21       2  0 14:30 ?        00:00:00 [idle_inject/1]
+root          22       2  0 14:30 ?        00:00:00 [migration/1]
+root          23       2  0 14:30 ?        00:00:00 [ksoftirqd/1]
+root          25       2  0 14:30 ?        00:00:00 [kworker/1:0H-events_highpri]
+root          26       2  0 14:30 ?        00:00:00 [cpuhp/2]
+root          27       2  0 14:30 ?        00:00:00 [idle_inject/2]
+root          28       2  0 14:30 ?        00:00:00 [migration/2]
+root          29       2  0 14:30 ?        00:00:00 [ksoftirqd/2]
+root          32       2  0 14:30 ?        00:00:00 [cpuhp/3]
+root          33       2  0 14:30 ?        00:00:00 [idle_inject/3]
+root          34       2  0 14:30 ?        00:00:00 [migration/3]
+root          35       2  0 14:30 ?        00:00:00 [ksoftirqd/3]
+root          36       2  0 14:30 ?        00:00:00 [kworker/3:0-events]
+root          37       2  0 14:30 ?        00:00:00 [kworker/3:0H-events_highpri]
+root          39       2  0 14:30 ?        00:00:00 [kworker/u8:1-ext4-rsv-conversion]
+root          41       2  0 14:30 ?        00:00:00 [kdevtmpfs]
+root          42       2  0 14:30 ?        00:00:00 [inet_frag_wq]
+root          43       2  0 14:30 ?        00:00:00 [kauditd]
+root          44       2  0 14:30 ?        00:00:00 [khungtaskd]
+root          45       2  0 14:30 ?        00:00:00 [oom_reaper]
+root          46       2  0 14:30 ?        00:00:00 [writeback]
+root          47       2  0 14:30 ?        00:00:00 [kcompactd0]
+root          48       2  0 14:30 ?        00:00:00 [ksmd]
+root          50       2  0 14:30 ?        00:00:00 [khugepaged]
+root          51       2  0 14:30 ?        00:00:00 [kintegrityd]
+root          52       2  0 14:30 ?        00:00:00 [kblockd]
+root          53       2  0 14:30 ?        00:00:00 [blkcg_punt_bio]
+root          55       2  0 14:30 ?        00:00:00 [tpm_dev_wq]
+root          56       2  0 14:30 ?        00:00:00 [edac-poller]
+root          57       2  0 14:30 ?        00:00:00 [devfreq_wq]
+root          58       2  0 14:30 ?        00:00:00 [kworker/3:1H-kblockd]
+root          59       2  0 14:30 ?        00:00:00 [kswapd0]
+root          65       2  0 14:30 ?        00:00:00 [kthrotld]
+root          67       2  0 14:30 ?        00:00:00 [acpi_thermal_pm]
+root          68       2  0 14:30 ?        00:00:00 [xenbus_probe]
+root          69       2  0 14:30 ?        00:00:00 [mld]
+root          70       2  0 14:30 ?        00:00:00 [ipv6_addrconf]
+root          71       2  0 14:30 ?        00:00:00 [kworker/2:1H-kblockd]
+root          76       2  0 14:30 ?        00:00:00 [kstrp]
+root          82       2  0 14:30 ?        00:00:00 [zswap-shrink]
+root          83       2  0 14:30 ?        00:00:00 [kworker/u9:0]
+root         133       2  0 14:30 ?        00:00:00 [kworker/1:1H-kblockd]
+root         142       2  0 14:30 ?        00:00:00 [kworker/0:1H-kblockd]
+root         160       2  0 14:30 ?        00:00:00 [cryptd]
+root         161       2  0 14:30 ?        00:00:00 [ata_sff]
+root         162       2  0 14:30 ?        00:00:00 [scsi_eh_0]
+root         165       2  0 14:30 ?        00:00:00 [scsi_tmf_0]
+root         166       2  0 14:30 ?        00:00:00 [scsi_eh_1]
+root         168       2  0 14:30 ?        00:00:00 [scsi_eh_2]
+root         169       2  0 14:30 ?        00:00:00 [scsi_tmf_1]
+root         170       2  0 14:30 ?        00:00:00 [scsi_tmf_2]
+root         171       2  0 14:30 ?        00:00:00 [kworker/u8:3-events_unbound]
+root         206       2  0 14:30 ?        00:00:00 [irq/18-vmwgfx]
+root         207       2  0 14:30 ?        00:00:00 [ttm]
+root         229       2  0 14:30 ?        00:00:00 [kworker/0:2-events]
+root         233       2  0 14:30 ?        00:00:00 [kworker/1:2-rcu_gp]
+root         275       2  0 14:30 ?        00:00:00 [jbd2/sda1-8]
+root         276       2  0 14:30 ?        00:00:00 [ext4-rsv-conver]
+root         317       2  0 14:30 ?        00:00:00 [psimon]
+root         332       1  0 14:30 ?        00:00:00 /lib/systemd/systemd-journald
+root         346       2  0 14:30 ?        00:00:00 [psimon]
+root         378       1  0 14:30 ?        00:00:00 /lib/systemd/systemd-udevd
+root         396       2  0 14:30 ?        00:00:00 [psimon]
+root         406       1  0 14:30 ?        00:00:00 /usr/sbin/haveged --Foreground --verbose=1
+systemd+     428       1  0 14:30 ?        00:00:00 /lib/systemd/systemd-networkd
+root         445       2  0 14:30 ?        00:00:00 [rpciod]
+root         446       2  0 14:30 ?        00:00:00 [xprtiod]
+root         457       2  0 14:30 ?        00:00:00 [kworker/2:2H-kblockd]
+root         479       2  0 14:30 ?        00:00:00 [cfg80211]
+root         483       2  0 14:30 ?        00:00:00 [psimon]
+root         499       1  0 14:30 ?        00:00:00 /usr/sbin/cron -f
+message+     500       1  0 14:30 ?        00:00:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+polkitd      502       1  0 14:30 ?        00:00:00 /usr/lib/polkit-1/polkitd --no-debug
+root         503       1  0 14:30 ?        00:00:00 /lib/systemd/systemd-logind
+root         517       1  0 14:30 ?        00:00:00 /usr/sbin/NetworkManager --no-daemon
+root         518       2  0 14:30 ?        00:00:00 [psimon]
+root         539       1  0 14:30 ?        00:00:00 /usr/sbin/ModemManager
+root         551       1  0 14:30 ?        00:00:00 /usr/sbin/VBoxService
+root         715       1  0 14:30 ?        00:00:00 /usr/sbin/lightdm
+root         726     715  1 14:30 tty7     00:00:21 /usr/lib/xorg/Xorg :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+root         727       1  0 14:30 tty1     00:00:00 /sbin/agetty -o -p -- \u --noclear - linux
+rtkit        771       1  0 14:30 ?        00:00:00 /usr/libexec/rtkit-daemon
+root         839     715  0 14:30 ?        00:00:00 lightdm --session-child 15 26
+vboxuse+     847       1  0 14:30 ?        00:00:00 /lib/systemd/systemd --user
+vboxuse+     848     847  0 14:30 ?        00:00:00 (sd-pam)
+root         863       2  0 14:30 ?        00:00:00 [psimon]
+vboxuse+     865     847  0 14:30 ?        00:00:00 /usr/bin/pipewire
+vboxuse+     866     847  0 14:30 ?        00:00:00 /usr/bin/pipewire -c filter-chain.conf
+vboxuse+     868     847  0 14:30 ?        00:00:00 /usr/bin/wireplumber
+vboxuse+     869     847  0 14:30 ?        00:00:00 /usr/bin/pipewire-pulse
+vboxuse+     870     847  0 14:30 ?        00:00:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+vboxuse+     875     847  0 14:30 ?        00:00:00 /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
+vboxuse+     897     839  0 14:30 ?        00:00:00 xfce4-session
+vboxuse+     945       1  0 14:30 ?        00:00:00 /usr/bin/VBoxClient --clipboard
+vboxuse+     946     945  0 14:30 ?        00:00:00 /usr/bin/VBoxClient --clipboard
+vboxuse+     960       1  0 14:30 ?        00:00:00 /usr/bin/VBoxClient --seamless
+vboxuse+     962     960  0 14:30 ?        00:00:00 /usr/bin/VBoxClient --seamless
+vboxuse+     968       1  0 14:30 ?        00:00:00 /usr/bin/VBoxClient --draganddrop
+vboxuse+     970     968  0 14:30 ?        00:00:01 /usr/bin/VBoxClient --draganddrop
+vboxuse+     981     897  0 14:30 ?        00:00:00 /usr/bin/ssh-agent x-session-manager
+vboxuse+     991     847  0 14:30 ?        00:00:00 /usr/libexec/at-spi-bus-launcher
+vboxuse+     998     991  0 14:30 ?        00:00:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/us
+vboxuse+    1003     847  0 14:30 ?        00:00:00 /usr/lib/x86_64-linux-gnu/xfce4/xfconf/xfconfd
+vboxuse+    1009     847  0 14:30 ?        00:00:00 /usr/libexec/at-spi2-registryd --use-gnome-session
+vboxuse+    1022     847  0 14:30 ?        00:00:00 /usr/bin/gpg-agent --supervised
+vboxuse+    1024     897  0 14:30 ?        00:00:05 xfwm4 --display :0.0 --sm-client-id 2feb32fec-c37b-489e-9d77-8a4ef4225441
+vboxuse+    1028     847  0 14:30 ?        00:00:00 /usr/libexec/gvfsd
+vboxuse+    1034     847  0 14:30 ?        00:00:00 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+vboxuse+    1058     897  0 14:30 ?        00:00:00 xfsettingsd --display :0.0 --sm-client-id 2d82d7e6b-2289-4b2b-af35-567011573a9d
+root        1062       1  0 14:30 ?        00:00:00 /usr/libexec/upowerd
+vboxuse+    1068     897  0 14:30 ?        00:00:01 xfce4-panel --display :0.0 --sm-client-id 20b506898-b56b-4d1a-889a-0705be20e3c3
+vboxuse+    1073     897  0 14:30 ?        00:00:12 Thunar --sm-client-id 258cb9121-ade6-4443-bdae-7a3d19c1847d --daemon
+vboxuse+    1083       1  0 14:30 ?        00:00:00 /usr/bin/VBoxClient --vmsvga
+vboxuse+    1084    1083  0 14:30 ?        00:00:00 /usr/bin/VBoxClient --vmsvga
+vboxuse+    1088     897  0 14:30 ?        00:00:01 xfdesktop --display :0.0 --sm-client-id 254193c24-653b-4538-8529-c60ddbb78950
+vboxuse+    1089     847  0 14:30 ?        00:00:00 /usr/libexec/gvfs-udisks2-volume-monitor
+root        1096       1  0 14:30 ?        00:00:00 /usr/libexec/udisks2/udisksd
+vboxuse+    1101    1068  0 14:30 ?        00:00:00 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libwhiskermenu.so 1 25165831 whiskermenu 
+vboxuse+    1106    1068  0 14:30 ?        00:00:02 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libcpugraph.so 13 25165836 cpugraph CPU G
+vboxuse+    1107    1068  0 14:30 ?        00:00:00 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libsystray.so 14 25165837 systray Status 
+vboxuse+    1108    1068  0 14:30 ?        00:00:02 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libgenmon.so 15 25165838 genmon Generic M
+vboxuse+    1109    1068  0 14:30 ?        00:00:00 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libpulseaudio-plugin.so 16 25165839 pulse
+vboxuse+    1110    1068  0 14:30 ?        00:00:00 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libnotification-plugin.so 17 25165840 not
+vboxuse+    1111    1068  0 14:30 ?        00:00:00 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libxfce4powermanager.so 18 25165841 power
+vboxuse+    1117    1068  0 14:30 ?        00:00:00 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libactions.so 22 25165842 actions Action 
+vboxuse+    1140     847  0 14:30 ?        00:00:00 /usr/libexec/gvfs-afc-volume-monitor
+vboxuse+    1148     847  0 14:30 ?        00:00:00 /usr/libexec/gvfs-goa-volume-monitor
+vboxuse+    1161     847  0 14:30 ?        00:00:00 /usr/lib/x86_64-linux-gnu/xfce4/notifyd/xfce4-notifyd
+vboxuse+    1162     847  0 14:30 ?        00:00:00 /usr/libexec/gvfs-gphoto2-volume-monitor
+vboxuse+    1182     847  0 14:30 ?        00:00:00 /usr/libexec/gvfs-mtp-volume-monitor
+vboxuse+    1199     847  0 14:30 ?        00:00:00 /usr/libexec/gvfsd-metadata
+vboxuse+    1206     897  0 14:30 ?        00:00:00 xfce4-power-manager --restart --sm-client-id 2c1602ac6-8c67-4c52-ab53-51baa1f9d15e
+vboxuse+    1207    1028  0 14:30 ?        00:00:00 /usr/libexec/gvfsd-trash --spawner :1.20 /org/gtk/gvfs/exec_spaw/0
+vboxuse+    1240     897  0 14:30 ?        00:00:00 /usr/bin/python3 /usr/bin/blueman-applet
+vboxuse+    1241     897  0 14:30 ?        00:00:00 /usr/libexec/geoclue-2.0/demos/agent
+vboxuse+    1244     897  0 14:30 ?        00:00:00 xiccd
+colord      1264       1  0 14:30 ?        00:00:00 /usr/libexec/colord
+vboxuse+    1266     897  0 14:30 ?        00:00:00 nm-applet
+vboxuse+    1289     897  0 14:30 ?        00:00:00 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+vboxuse+    1295       1  0 14:30 ?        00:00:00 xcape -e Super_L Control_L Escape
+vboxuse+    1311     897  0 14:30 ?        00:00:00 light-locker
+vboxuse+    1317     847  0 14:30 ?        00:00:00 /usr/libexec/dconf-service
+vboxuse+    1441     847  0 14:30 ?        00:00:00 /usr/libexec/xdg-desktop-portal
+vboxuse+    1446     847  0 14:30 ?        00:00:00 /usr/libexec/xdg-document-portal
+vboxuse+    1450     847  0 14:30 ?        00:00:00 /usr/libexec/xdg-permission-store
+root        1457    1446  0 14:30 ?        00:00:00 fusermount3 -o rw,nosuid,nodev,fsname=portal,auto_unmount,subtype=portal -- /run/user/1000/doc
+vboxuse+    1462     847  0 14:30 ?        00:00:00 /usr/libexec/xdg-desktop-portal-gtk
+vboxuse+    1480     847  0 14:30 ?        00:00:00 /usr/libexec/bluetooth/obexd
+vboxuse+    1726       1  0 14:30 ?        00:00:07 /usr/bin/qterminal
+root        4211       2  0 14:35 ?        00:00:00 [kworker/2:0-ata_sff]
+vboxuse+    6276    1726  0 14:39 pts/1    00:00:00 /usr/bin/zsh
+root       11896       2  0 14:50 ?        00:00:00 [kworker/3:1-events]
+root       13479       2  0 14:53 ?        00:00:00 [kworker/0:1-events]
+root       14864       2  0 14:56 ?        00:00:00 [kworker/2:2-ata_sff]
+root       15528       1  0 14:57 ?        00:00:00 /usr/sbin/pcscd --foreground --auto-exit
+root       15731       2  0 14:57 ?        00:00:00 [kworker/1:1-events]
+vboxuse+   16195    6276  1 14:58 pts/1    00:00:05 /usr/lib/firefox-esr/firefox-bin
+vboxuse+   16276   16195  0 14:58 pts/1    00:00:00 /usr/lib/firefox-esr/firefox-esr -contentproc -parentBuildID 20230724124053 -prefsLen 27136 -prefMapSize 236398 -appDir /usr/lib/firefox-
+vboxuse+   16294   16195  0 14:58 pts/1    00:00:00 /usr/lib/firefox-esr/firefox-esr -contentproc -childID 1 -isForBrowser -prefsLen 27212 -prefMapSize 236398 -jsInitLen 240908 -parentBuild
+vboxuse+   16322   16195  0 14:58 pts/1    00:00:00 /usr/lib/firefox-esr/firefox-esr -contentproc -childID 2 -isForBrowser -prefsLen 32354 -prefMapSize 236398 -jsInitLen 240908 -parentBuild
+vboxuse+   16354   16195  0 14:58 pts/1    00:00:00 /usr/lib/firefox-esr/firefox-esr -contentproc -childID 3 -isForBrowser -prefsLen 32354 -prefMapSize 236398 -jsInitLen 240908 -parentBuild
+vboxuse+   16425   16195  0 14:58 pts/1    00:00:00 /usr/lib/firefox-esr/firefox-esr -contentproc -childID 4 -isForBrowser -prefsLen 28175 -prefMapSize 236398 -jsInitLen 240908 -parentBuild
+vboxuse+   16429   16195  0 14:58 pts/1    00:00:00 /usr/lib/firefox-esr/firefox-esr -contentproc -childID 5 -isForBrowser -prefsLen 28175 -prefMapSize 236398 -jsInitLen 240908 -parentBuild
+vboxuse+   16433   16195  0 14:58 pts/1    00:00:00 /usr/lib/firefox-esr/firefox-esr -contentproc -childID 6 -isForBrowser -prefsLen 28175 -prefMapSize 236398 -jsInitLen 240908 -parentBuild
+vboxuse+   16514    1726  0 14:58 pts/0    00:00:00 /usr/bin/zsh
+root       18150       2  0 15:01 ?        00:00:00 [kworker/2:1-events_power_efficient]
+vboxuse+   19439   16514  0 15:04 pts/0    00:00:00 ps -ef
+                                                                                                                                                                                             
+┌──(vboxuser2㉿kali)-[~/Desktop]
+└─$ bg 16195      
+bg: job not found: 16195
+                                                                                                                                                                                             
+┌──(vboxuser2㉿kali)-[~/Desktop]
+└─$ jobs   
+                                                                                                                                                                                             
+┌──(vboxuser2㉿kali)-[~/Desktop]
+└─$ df -h                     
+Filesystem      Size  Used Avail Use% Mounted on
+udev            1.9G     0  1.9G   0% /dev
+tmpfs           392M  1.1M  391M   1% /run
+/dev/sda1        29G   14G   14G  50% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           392M  112K  392M   1% /run/user/1000
+                                                                                                                                                                                             
+┌──(vboxuser2㉿kali)-[~/Desktop]
+└─$ 
+                                                                                                                                                                                             
+┌──(vboxuser2㉿kali)-[~/Desktop]
+└─$ ┌──(vboxuser2㉿kali)-[~/Desktop]
+└─$ df -h                     
+Filesystem      Size  Used Avail Use% Mounted on
+udev            1.9G     0  1.9G   0% /dev
+tmpfs           392M  1.1M  391M   1% /run
+/dev/sda1        29G   14G   14G  50% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           392M  112K  392M   1% /run/user/100 
+zsh: no such file or directory: ┌──(vboxuser2㉿kali)-[~/Desktop]
+└─$: command not found
+Filesystem: command not found
+Command 'udev' not found, did you mean:
+  command 'udav' from deb udav
+  command 'udv' from deb ncbi-tools-x11
+Try: sudo apt install <deb name>
+Command 'tmpfs' not found, did you mean:
+  command 'tmfs' from deb tmfs
+Try: sudo apt install <deb name>
+zsh: permission denied: /dev/sda1
+Command 'tmpfs' not found, did you mean:
+  command 'tmfs' from deb tmfs
+Try: sudo apt install <deb name>
+Command 'tmpfs' not found, did you mean:
+  command 'tmfs' from deb tmfs
+Try: sudo apt install <deb name>
+Command 'tmpfs' not found, did you mean:
+  command 'tmfs' from deb tmfs
+Try: sudo apt install <deb name>
+                                                                                                                                                                                             
+┌──(vboxuser2㉿kali)-[~/Desktop]
+└─$ ps -e              
+    PID TTY          TIME CMD
+      1 ?        00:00:00 systemd
+      2 ?        00:00:00 kthreadd
+      3 ?        00:00:00 rcu_gp
+      4 ?        00:00:00 rcu_par_gp
+      5 ?        00:00:00 slub_flushwq
+      6 ?        00:00:00 netns
+      8 ?        00:00:00 kworker/0:0H-events_highpri
+      9 ?        00:00:00 kworker/u8:0-events_unbound
+     10 ?        00:00:00 mm_percpu_wq
+     11 ?        00:00:00 rcu_tasks_kthread
+     12 ?        00:00:00 rcu_tasks_rude_kthread
+     13 ?        00:00:00 rcu_tasks_trace_kthread
+     14 ?        00:00:00 ksoftirqd/0
+     15 ?        00:00:00 rcu_preempt
+     16 ?        00:00:00 migration/0
+     17 ?        00:00:00 idle_inject/0
+     19 ?        00:00:00 cpuhp/0
+     20 ?        00:00:00 cpuhp/1
+     21 ?        00:00:00 idle_inject/1
+     22 ?        00:00:00 migration/1
+     23 ?        00:00:00 ksoftirqd/1
+     25 ?        00:00:00 kworker/1:0H-events_highpri
+     26 ?        00:00:00 cpuhp/2
+     27 ?        00:00:00 idle_inject/2
+     28 ?        00:00:00 migration/2
+     29 ?        00:00:00 ksoftirqd/2
+     32 ?        00:00:00 cpuhp/3
+     33 ?        00:00:00 idle_inject/3
+     34 ?        00:00:00 migration/3
+     35 ?        00:00:00 ksoftirqd/3
+     36 ?        00:00:00 kworker/3:0-events
+     37 ?        00:00:00 kworker/3:0H-events_highpri
+     39 ?        00:00:00 kworker/u8:1-events_unbound
+     41 ?        00:00:00 kdevtmpfs
+     42 ?        00:00:00 inet_frag_wq
+     43 ?        00:00:00 kauditd
+     44 ?        00:00:00 khungtaskd
+     45 ?        00:00:00 oom_reaper
+     46 ?        00:00:00 writeback
+     47 ?        00:00:00 kcompactd0
+     48 ?        00:00:00 ksmd
+     50 ?        00:00:00 khugepaged
+     51 ?        00:00:00 kintegrityd
+     52 ?        00:00:00 kblockd
+     53 ?        00:00:00 blkcg_punt_bio
+     55 ?        00:00:00 tpm_dev_wq
+     56 ?        00:00:00 edac-poller
+     57 ?        00:00:00 devfreq_wq
+     58 ?        00:00:00 kworker/3:1H-kblockd
+     59 ?        00:00:00 kswapd0
+     65 ?        00:00:00 kthrotld
+     67 ?        00:00:00 acpi_thermal_pm
+     68 ?        00:00:00 xenbus_probe
+     69 ?        00:00:00 mld
+     70 ?        00:00:00 ipv6_addrconf
+     71 ?        00:00:00 kworker/2:1H-kblockd
+     76 ?        00:00:00 kstrp
+     82 ?        00:00:00 zswap-shrink
+     83 ?        00:00:00 kworker/u9:0
+    133 ?        00:00:00 kworker/1:1H-kblockd
+    142 ?        00:00:00 kworker/0:1H-kblockd
+    160 ?        00:00:00 cryptd
+    161 ?        00:00:00 ata_sff
+    162 ?        00:00:00 scsi_eh_0
+    165 ?        00:00:00 scsi_tmf_0
+    166 ?        00:00:00 scsi_eh_1
+    168 ?        00:00:00 scsi_eh_2
+    169 ?        00:00:00 scsi_tmf_1
+    170 ?        00:00:00 scsi_tmf_2
+    171 ?        00:00:00 kworker/u8:3-events_unbound
+    206 ?        00:00:00 irq/18-vmwgfx
+    207 ?        00:00:00 ttm
+    229 ?        00:00:00 kworker/0:2-events
+    233 ?        00:00:00 kworker/1:2-rcu_gp
+    275 ?        00:00:00 jbd2/sda1-8
+    276 ?        00:00:00 ext4-rsv-conver
+    317 ?        00:00:00 psimon
+    332 ?        00:00:00 systemd-journal
+    346 ?        00:00:00 psimon
+    378 ?        00:00:00 systemd-udevd
+    396 ?        00:00:00 psimon
+    406 ?        00:00:00 haveged
+    428 ?        00:00:00 systemd-network
+    445 ?        00:00:00 rpciod
+    446 ?        00:00:00 xprtiod
+    457 ?        00:00:00 kworker/2:2H-kblockd
+    479 ?        00:00:00 cfg80211
+    483 ?        00:00:00 psimon
+    499 ?        00:00:00 cron
+    500 ?        00:00:00 dbus-daemon
+    502 ?        00:00:00 polkitd
+    503 ?        00:00:00 systemd-logind
+    517 ?        00:00:00 NetworkManager
+    518 ?        00:00:00 psimon
+    539 ?        00:00:00 ModemManager
+    551 ?        00:00:00 VBoxService
+    715 ?        00:00:00 lightdm
+    726 tty7     00:00:23 Xorg
+    727 tty1     00:00:00 agetty
+    771 ?        00:00:00 rtkit-daemon
+    839 ?        00:00:00 lightdm
+    847 ?        00:00:00 systemd
+    848 ?        00:00:00 (sd-pam)
+    863 ?        00:00:00 psimon
+    865 ?        00:00:00 pipewire
+    866 ?        00:00:00 pipewire
+    868 ?        00:00:00 wireplumber
+    869 ?        00:00:00 pipewire-pulse
+    870 ?        00:00:00 dbus-daemon
+    875 ?        00:00:00 gnome-keyring-d
+    897 ?        00:00:00 xfce4-session
+    945 ?        00:00:00 VBoxClient
+    946 ?        00:00:00 VBoxClient
+    960 ?        00:00:00 VBoxClient
+    962 ?        00:00:00 VBoxClient
+    968 ?        00:00:00 VBoxClient
+    970 ?        00:00:01 VBoxClient
+    981 ?        00:00:00 ssh-agent
+    991 ?        00:00:00 at-spi-bus-laun
+    998 ?        00:00:00 dbus-daemon
+   1003 ?        00:00:00 xfconfd
+   1009 ?        00:00:00 at-spi2-registr
+   1022 ?        00:00:00 gpg-agent
+   1024 ?        00:00:05 xfwm4
+   1028 ?        00:00:00 gvfsd
+   1034 ?        00:00:00 gvfsd-fuse
+   1058 ?        00:00:00 xfsettingsd
+   1062 ?        00:00:00 upowerd
+   1068 ?        00:00:01 xfce4-panel
+   1073 ?        00:00:13 Thunar
+   1083 ?        00:00:00 VBoxClient
+   1084 ?        00:00:00 VBoxClient
+   1088 ?        00:00:02 xfdesktop
+   1089 ?        00:00:00 gvfs-udisks2-vo
+   1096 ?        00:00:00 udisksd
+   1101 ?        00:00:00 panel-1-whisker
+   1106 ?        00:00:02 panel-13-cpugra
+   1107 ?        00:00:00 panel-14-systra
+   1108 ?        00:00:02 panel-15-genmon
+   1109 ?        00:00:00 panel-16-pulsea
+   1110 ?        00:00:00 panel-17-notifi
+   1111 ?        00:00:00 panel-18-power-
+   1117 ?        00:00:00 panel-22-action
+   1140 ?        00:00:00 gvfs-afc-volume
+   1148 ?        00:00:00 gvfs-goa-volume
+   1161 ?        00:00:00 xfce4-notifyd
+   1162 ?        00:00:00 gvfs-gphoto2-vo
+   1182 ?        00:00:00 gvfs-mtp-volume
+   1199 ?        00:00:00 gvfsd-metadata
+   1206 ?        00:00:00 xfce4-power-man
+   1207 ?        00:00:00 gvfsd-trash
+   1240 ?        00:00:00 blueman-applet
+   1241 ?        00:00:00 agent
+   1244 ?        00:00:00 xiccd
+   1264 ?        00:00:00 colord
+   1266 ?        00:00:00 nm-applet
+   1289 ?        00:00:00 polkit-gnome-au
+   1295 ?        00:00:00 xcape
+   1311 ?        00:00:00 light-locker
+   1317 ?        00:00:00 dconf-service
+   1441 ?        00:00:00 xdg-desktop-por
+   1446 ?        00:00:00 xdg-document-po
+   1450 ?        00:00:00 xdg-permission-
+   1457 ?        00:00:00 fusermount3
+   1462 ?        00:00:00 xdg-desktop-por
+   1480 ?        00:00:00 obexd
+   1726 ?        00:00:07 qterminal
+   6276 pts/1    00:00:00 zsh
+  11896 ?        00:00:00 kworker/3:1-events
+  13479 ?        00:00:00 kworker/0:1-events
+  14864 ?        00:00:00 kworker/2:2-ata_sff
+  15528 ?        00:00:00 pcscd
+  15731 ?        00:00:00 kworker/1:1-events
+  16514 pts/0    00:00:00 zsh
+  18150 ?        00:00:00 kworker/2:1-ata_sff
+  20622 ?        00:00:00 kworker/2:0-events
+  21123 ?        00:00:00 kworker/3:2-events
+  21124 ?        00:00:00 kworker/1:0-events
+  21591 pts/1    00:00:01 firefox-bin
+  21665 pts/1    00:00:00 Socket Process
+  21683 pts/1    00:00:00 Privileged Cont
+  21715 pts/1    00:00:00 file:// Content
+  21762 pts/1    00:00:00 WebExtensions
+  21828 pts/1    00:00:00 Web Content
+  21833 pts/1    00:00:00 Web Content
+  21859 pts/1    00:00:00 Web Content
+  21916 pts/0    00:00:00 ps
+                                                                                                                                                                                             
+┌──(vboxuser2㉿kali)-[~/Desktop]
+└─$ kill 21591
