@@ -1,8 +1,7 @@
 programLoop = 'y'
 
 while 'y' in programLoop or 's' in programLoop or 'si' in programLoop:
-    print("Ciao, benvenuto in sto schifo. Che figura vuoi rappresentare?")
-    userInput = input()
+    userInput = input("Ciao, benvenuto in sto schifo. Che figura vuoi rappresentare?")
 
     if 'qu' in userInput:
         lato = int(input("Stiamo a calcolare il quadrato. Damme il lato:"))
