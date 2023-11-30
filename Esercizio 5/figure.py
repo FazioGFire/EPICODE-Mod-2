@@ -14,7 +14,7 @@ while 'y' in programLoop or 's' in programLoop or 'si' in programLoop:
         base = int(input())
         print("Mo damme l'altezza")
         altezza = int(input())
-        print("L'area del rettangolo è:" +  str(base*altezza) + ". Il perimetro è:" +  str((base*2)+(altezza+2)) + ".")
+        print("L'area del rettangolo è:" +  str(base*altezza) + ". Il perimetro è:" +  str((base*2)+(altezza*2)) + ".")
 
     elif 'cer' in userInput:
         print("Forse facciamo il cerchio. Damme il raggio.")
